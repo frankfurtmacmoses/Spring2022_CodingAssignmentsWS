@@ -1,10 +1,10 @@
-# for g++ compiler on Apple OS-X
+# for C++ compiler on Apple OS-X
 # copy to make.def
-CC          = g++
+CC          = clang++
 CLINKER     = $(CC)
-OMPFLAG	    = -fopenmp
+OMPFLAG	    = -Xpreprocessor -fopenmp
 OPTFLAGS    =  
-LIBS        = -lm
+LIBS        = -lm -lomp
 PRE         = ./
 
 CFLAGS	  = $(OMPFLAG) $(OPTFLAGS)
