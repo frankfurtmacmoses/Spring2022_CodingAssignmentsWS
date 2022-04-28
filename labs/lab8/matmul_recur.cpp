@@ -3,7 +3,7 @@
 #include <stdio.h>   
 #include <stdlib.h> 
 #include <omp.h>
-#include "2DArray.h"
+#include "2DArray.h" 
 
 // define sizes of matrices to be used
 #define MM 1000
